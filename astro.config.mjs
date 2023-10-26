@@ -6,7 +6,6 @@ import lottie from "astro-integration-lottie";
 
 // https://astro.build/config
 export default defineConfig({
-  publicDir: './momentumv1',
   experimental: {
     viewTransitions: true,
   },

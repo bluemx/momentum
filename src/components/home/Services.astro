@@ -34,11 +34,11 @@ const services = [
         {
           services.map((service) => (
 
-            <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12  px-6 py-8 bg-cover" data-aos="zoom-in" data-aos-mirror="true" data-aos-duration="500" style={`background-image: url(assets/${service.bg});`} >
+            <div class=" flex flex-col gap-12  px-6 py-8 bg-cover" data-aos="zoom-in" data-aos-mirror="true" data-aos-duration="500" style={`background-image: url(assets/${service.bg});`} >
               <p class="text-sm">{service.step}</p>
               <div class="flex flex-col gap-4">
-                <h3 class="text-5xl font-display font-bold">{service.name}</h3>
-                <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                <h3 class="text-5xl font-display font-bold dark:text-primary-500">{service.name}</h3>
+                <p class="text-primary-950/70 dark:text-primary-800/70 text-base sm:text-lg">
                   {service.description}
                 </p>
               </div>

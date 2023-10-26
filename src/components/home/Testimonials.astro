@@ -1,4 +1,6 @@
 ---
+import Singleline from "./Singleline.astro";
+
 const testimonials = [
   {
     name: 'Joana L.',
@@ -21,13 +23,16 @@ const testimonials = [
     message:
       '“Los retos grupales de Momentum Alternativa me permitieron colaborar con personas de distintas partes del país para diseñar soluciones innovadoras. Esta interacción enriqueció mi perspectiva como agente de cambio.”',
   },
+  
 ];
 ---
 
-<section class="py-16 sm:py-20">
+<Singleline></Singleline>
+
+<section class="py-16 sm:py-20">  
   <div class="v mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col items-center gap-12 lg:gap-20">
-      <h2 class="mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl">
+      <h2 class="mx-auto max-w-xl text-center text-3xl font-bold tracking-tight sm:text-4xl">
         Momentum Alternativa es parte de la confianza de nuestros clientes.
       </h2>
       <div
@@ -42,7 +47,7 @@ const testimonials = [
                     class="text-primary-600 dark:text-primary-400 h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
+                    fill="#e1a93c"
                     aria-hidden="true"
                   >
                     <path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z" />
@@ -55,7 +60,7 @@ const testimonials = [
               <figcaption class="flex flex-col gap-4">
                 <img class="mx-auto h-8 w-8 rounded-full" src={testimonial.image} alt="" />
                 <div class="text-center">
-                  <div class="text-base font-medium">{testimonial.name}</div>
+                  <div class="text-base font-bold text-main">{testimonial.name}</div>
                   <div class="text-primary-950/70 dark:text-primary-200/70 text-sm">
                     {testimonial.description}
                   </div>
@@ -68,3 +73,5 @@ const testimonials = [
     </div>
   </div>
 </section>
+
+<div class="-scale-100"><Singleline></Singleline></div>
