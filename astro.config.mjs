@@ -6,6 +6,7 @@ import lottie from "astro-integration-lottie";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://digitalfamily.mx/momentumv1',
   experimental: {
     viewTransitions: true,
   },
